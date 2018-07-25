@@ -1,15 +1,15 @@
 
 public class Triangle {
-	private double AB;
-	private double BC;
-	private double AC;
+	private double ab;
+	private double bc;
+	private double ac;
 	
 	
 	public Triangle(double aB, double bC, double aC) {
 		super();
-		AB = aB;
-		BC = bC;
-		AC = aC;
+		ab = aB;
+		bc = bC;
+		ac = aC;
 	}
 	
 	public Triangle() {
@@ -21,42 +21,42 @@ public class Triangle {
 	 * @return the aB
 	 */
 	public double getAB() {
-		return AB;
+		return ab;
 	}
 	/**
 	 * @param aB the aB to set
 	 */
 	public void setAB(double aB) {
-		AB = aB;
+		ab = aB;
 	}
 	/**
 	 * @return the bC
 	 */
 	public double getBC() {
-		return BC;
+		return bc;
 	}
 	/**
 	 * @param bC the bC to set
 	 */
 	public void setBC(double bC) {
-		BC = bC;
+		bc = bC;
 	}
 	/**
 	 * @return the aC
 	 */
 	public double getAC() {
-		return AC;
+		return ac;
 	}
 	/**
 	 * @param aC the aC to set
 	 */
 	public void setAC(double aC) {
-		AC = aC;
+		ac = aC;
 	}
 	public double squareOfTriangle () {
-		double HalfPerim = this.perimeterOfTriangle()/2;
-		double res = Math.sqrt(HalfPerim*(HalfPerim-this.getAB())*
-				(HalfPerim-this.getAC())*(HalfPerim-this.getBC()));
+		double halfPerim = this.perimeterOfTriangle()/2;
+		double res = Math.sqrt(halfPerim*(halfPerim-this.getAB())*
+				(halfPerim-this.getAC())*(halfPerim-this.getBC()));
 		return res;
 	}
 	public double perimeterOfTriangle() {
